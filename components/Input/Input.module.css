@@ -1,0 +1,38 @@
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.2rem;
+}
+
+.input-element {
+    border: none;  
+    font-size: 1.2rem;
+}
+
+.input-element::placeholder {
+    color: rgb(158, 158, 158, .7);
+    font-size: 1.2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 2560px) {
+    .input {
+        margin-bottom: 4rem;
+    }
+    .input img {
+        height: 5rem;
+        width: 5rem;
+    }
+    .input-element {
+        height: 5rem;
+        width: 30%;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+    .input-element::placeholder {
+        font-size: 2.5rem;
+    }
+}
+

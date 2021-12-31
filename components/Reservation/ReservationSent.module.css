@@ -1,0 +1,45 @@
+.reservation-done {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.reservation-done-message {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.reservation-img {
+    color: #A66D03;
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 2.5rem;
+}
+
+.reservation-close {
+    width: fit-content;
+    margin: 3.5rem auto 0 auto;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .reservation-done-message {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .reservation-done {
+        min-height: calc(100vh - 24rem);
+    }
+    .reservation-done-message {
+        width: 70%;
+    }
+}
+  
+ 

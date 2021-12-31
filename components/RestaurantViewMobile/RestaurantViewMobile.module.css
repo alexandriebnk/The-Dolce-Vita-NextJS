@@ -1,0 +1,21 @@
+.restaurant-view-mobile {
+    height: 35rem;
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.restaurant-view-mobile-infos-layout {
+    height: 70%;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.restaurant-view-mobile-booking-link {
+    position: absolute;
+    left: 20%;
+}
+
+
+

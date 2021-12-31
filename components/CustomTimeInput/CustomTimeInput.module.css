@@ -1,0 +1,37 @@
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.2rem;
+}
+
+.hours,
+.separator, 
+.minutes {
+    margin-right: .6rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 2560px) {
+    .time {
+        margin-bottom: 4rem;
+    }
+    .time img {
+        height: 5rem;
+    }
+    .time select {
+        height: 4rem;
+        font-size: 2.5rem;
+        text-align-last: center;
+    }
+    .separator,
+    .pm {
+        font-size: 3rem;
+    }
+    .hours select, 
+    .minutes select {
+        width: 4rem;
+    }
+}
+

@@ -1,0 +1,68 @@
+.reservation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: calc(100vh - 24rem);
+  width: 90%;
+  max-width: 144rem;
+  margin: auto;
+}
+
+.reservation-p {
+  display: block;
+  font-size: 4rem;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.reservation-frame {
+  position: relative;
+  height: 100%;
+  min-height: 44rem;
+  width: 100%;
+  border: 1px solid black;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .reservation {
+    height: 100%;
+  }
+  .reservation-frame {
+    height: 75vh;
+    min-height: unset;
+  }
+  .reservation-p {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .reservation {
+    height: inherit;
+    width: 100%;
+  }
+  .reservation-p {
+      display: none;
+  }
+  .reservation-frame {
+    height: fit-content;
+    border: none;
+  }
+}
+
+@media (min-width: 2560px) {
+  .reservation {
+    height: calc(100vh - 40rem);
+    max-width: none;
+  }
+  .reservation-p {
+    font-size: 8rem;
+  }
+}
+
+
+

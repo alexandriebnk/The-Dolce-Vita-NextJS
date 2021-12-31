@@ -1,0 +1,41 @@
+.description h3 {
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.description p {
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .description h3 {
+        font-size: 2.6rem;
+        margin-bottom: 4rem;
+    }
+    .description p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .description h3 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .description h3 {
+        font-size: 4.5rem;
+        margin-bottom: 5rem;
+    }
+    .description p {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+}

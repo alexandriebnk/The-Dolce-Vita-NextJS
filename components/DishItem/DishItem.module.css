@@ -1,0 +1,46 @@
+.dish-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.dish-item-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.dish-item-infos-layout {
+    background-color: white;
+    height: 98%;
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;  
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .dish-item-infos-layout {
+        height: 96%;
+    }
+}
+
+@media (max-width: 576px) {
+    .dish-item-infos-layout {
+        height: 92.5%;
+        width: 95%;
+        padding: 2rem;
+    }
+}
+
+
+
+

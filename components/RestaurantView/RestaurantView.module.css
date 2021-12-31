@@ -1,0 +1,43 @@
+.restaurant-view {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.restaurant-view-infos-layout {
+    background-color: white;
+    position: absolute;
+    height: 88%;
+    width: 84%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    outline: 3px solid white;
+    outline-offset: .4rem;
+    padding: 2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 2560px) {
+    .restaurant-view-infos-layout {  
+        outline: 10px solid white;
+        outline-offset: 1rem;
+        padding: 4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

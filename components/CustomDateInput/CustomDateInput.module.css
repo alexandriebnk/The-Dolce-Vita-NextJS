@@ -1,0 +1,41 @@
+.date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.2rem;
+}
+
+.day {
+    margin-right: 1rem;
+}
+
+.day select,
+.month select,
+.year select {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 2560px) {
+    .date {
+        margin-bottom: 4rem;
+    }
+    .date img {
+        height: 5rem;
+    }
+    .date select {
+        height: 4rem;
+        font-size: 2.5rem;
+    }
+    .day select {
+        width: 3rem;
+    }
+    .month select {
+        width: 11rem;
+    }
+    .year select {
+        width: 6rem;
+    }
+}

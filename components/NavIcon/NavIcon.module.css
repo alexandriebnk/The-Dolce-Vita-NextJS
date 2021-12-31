@@ -1,0 +1,15 @@
+.nav-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 2560px) {
+    .nav-icon svg {
+        height: 8rem;
+        width: 8rem;
+    }  
+}
+
