@@ -1,6 +1,6 @@
-import { createContext } from "react";
+import React from "react";
 
-const MenuContext = createContext({
+const MenuContext = React.createContext({
   starters: {
     icon: "/images/menu/svg/starters.svg",
     name: "starters",

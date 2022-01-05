@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useRef } from "react";
 import gsap from "gsap";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import classes from "./Menu.module.css";
 import MenuContext from "../../store/MenuContext";
 import NavigationContext from "../../store/NavigationContext";
@@ -49,13 +49,15 @@ const Menu = () => {
             onClick={() => hideMenu()}
             ref={(el) => items.current.push(el)}
           >
-            <Link to={`/menu/${item.name}`} className={classes["menu-link"]}>
-              <img
-                src={item.icon}
-                alt={`food-icon-${item.name}`}
-                draggable="false"
-              />
-              <h4>{item.name}</h4>
+            <Link href={`/menu/${item.name}`} passHref>
+              <a className={classes["menu-link"]}>
+                <img
+                  src={item.icon}
+                  alt={`food-icon-${item.name}`}
+                  draggable="false"
+                />
+                <h4>{item.name}</h4>
+              </a>
             </Link>
           </li>
         ))}

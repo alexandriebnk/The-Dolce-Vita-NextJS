@@ -1,12 +1,20 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import classes from "./Home.module.css";
 import Carrousel from "../Carrousel/Carrousel";
 import CarrouselMobile from "../CarrouselMobile/CarrouselMobile";
 
-const Home = () => (
-  <div className={classes.home}>
-    {window.innerWidth <= 576 ? <CarrouselMobile /> : <Carrousel />}
-  </div>
-);
+const Home = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 576);
+  }, []);
+
+  return (
+    <div className={classes.home}>
+      {isMobile ? <CarrouselMobile /> : <Carrousel />}
+    </div>
+  );
+};
 
 export default Home;

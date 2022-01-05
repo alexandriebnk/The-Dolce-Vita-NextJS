@@ -1,6 +1,6 @@
-import { createContext } from "react";
+import React from "react";
 
-const ReservationContext = createContext({
+const ReservationContext = React.createContext({
   frameTitle: "BOOK A TABLE",
   description: {
     title: "Enjoy a bay front moment",

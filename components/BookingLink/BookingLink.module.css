@@ -1,18 +1,18 @@
 .link {
-    text-decoration: none;
-    color: black;
-    font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
 }
 
 .link:hover {
-    color: #E9CCA1;
-    border-bottom: 1px solid #E9CCA1;
+  color: #e9cca1;
+  border-bottom: 1px solid #e9cca1;
 }
 
 /* MEDIA QUERIES */
 
 @media (min-width: 2560px) {
-    .link {
-        font-size: 2.5rem;
-    }
+  .link {
+    font-size: 2.5rem;
+  }
 }

@@ -1,6 +1,6 @@
-import { createContext } from "react";
+import React from "react";
 
-const CarrouselContext = createContext([
+const CarrouselContext = React.createContext([
   {
     id: "A1",
     type: "Restaurant",

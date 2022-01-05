@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useRef } from "react";
 import gsap from "gsap";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import classes from "./Header.module.css";
 import BookingLink from "../BookingLink/BookingLink";
 import NavIcon from "../NavIcon/NavIcon";
@@ -58,8 +58,8 @@ const Header = () => {
       <div className={classes["nav-icon"]} ref={navIcon}>
         <NavIcon />
       </div>
-      <Link to="/">
-        <h1 aria-label="The Dolce Vita">
+      <Link href="/" passHref>
+        <h1 className={classes.title} aria-label="The Dolce Vita">
           <img
             src={logo}
             className={classes.logo}

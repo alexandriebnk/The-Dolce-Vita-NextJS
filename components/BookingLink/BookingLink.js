@@ -1,14 +1,12 @@
 import React from "react";
 import classes from "./BookingLink.module.css";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const BookingLink = ({ onClick }) => {
   return (
-    <div className={classes["booking-link"]}>
-      <Link to="/book-a-table" className={classes.link} onClick={onClick}>
-        BOOK A TABLE
-      </Link>
-    </div>
+    <Link href="/book-a-table" onClick={onClick}>
+      <a className={classes.link}>BOOK A TABLE</a>
+    </Link>
   );
 };
 

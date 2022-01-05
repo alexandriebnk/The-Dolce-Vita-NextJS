@@ -89,11 +89,10 @@ const Slider = ({ menu }) => {
         </div>
       </div>
       <div className={classes["slider-items"]} ref={sliderItems}>
-        {menu.items.map((item, index) => (
+        {menu?.items.map((item, index) => (
           <div
             className={classes["slider-items-child"]}
             ref={slide}
-            /*ref={(el) => slides.current.push(el)}*/
             key={`${item.title}-${index}`}
           >
             <DishItem item={item} icon={menu.icon} />

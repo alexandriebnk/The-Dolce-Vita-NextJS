@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import React from "react";
 
 const SiteContext = React.createContext({
   address: "414 Bay Avenue, Los Angeles, CA",
