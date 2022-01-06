@@ -1,14 +1,11 @@
 // thedolcevita.com/menu/category
 import Content from "../../components/Content/Content";
-import Head from "next/head";
+import SEO from "../components/SEO";
 
 function Category({ category }) {
   return (
     <>
-      <Head>
-        <title>Menu {category}</title>
-        <meta name="description" content={`Menu ${category}`} />
-      </Head>
+      <SEO content={`Menu ${category}`} />
       <Content />;
     </>
   );

@@ -1,17 +1,11 @@
 // thedolcevita.com/
-import Head from "next/head";
 import Home from "../components/Home/Home";
+import SEO from "../components/SEO";
 
 function HomePage() {
   return (
     <>
-      <Head>
-        <title>The Dolce Vita Restaurant</title>
-        <meta
-          name="description"
-          content="The Dolce Vita Restaurant - Menu and Reservation"
-        />
-      </Head>
+      <SEO content="Restaurant" />
       <Home />
     </>
   );
